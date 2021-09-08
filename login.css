@@ -1,0 +1,218 @@
+* {}
+
+body { background-image: url('BLACK BODY 2.jpg');}
+
+#formu1 {
+        background-image: url('formbox.png');
+        width: 20%;
+        height: auto;
+        padding: 20px 30px;
+        float: left;       
+        border-radius: 10px;
+        box-shadow: 1px 2px 8px rgba(255, 255, 255, 0.65);
+        margin: 80px auto auto auto
+        }
+
+p {   
+    font-family: "Raleway Thin", sans-serif;
+    font-size: 18pt;
+    letter-spacing: 6px;
+    text-align: left;
+    color:rgb(0, 225, 255);
+    text-transform: uppercase;
+    border-bottom: 4px solid  #ff009d ;
+  }
+
+label 
+     {
+       font-family: "Raleway", sans-serif;
+       font-size: 15pt;
+       color: rgb(114, 109, 109) ;
+     }
+
+#formu1 input
+             {
+               box-sizing: border-box;
+               width: 100%;
+               margin: 10px 0px;
+               border: none;
+               outline: none;
+               background-color: transparent; 
+               border-bottom: 3px solid rgb(0, 247, 255); 
+               font-size: 11pt;
+               color: #ffffff;    
+             }
+
+#formu2 {
+         background-image: url('formbox.png');   
+         width: 40%;
+         height: auto;
+         padding: 20px 30px;
+         float: center;       
+         border-radius: 10px;
+         box-shadow: 1px 2px 8px rgba(255, 255, 255, 0.65);
+         margin: 80px auto auto auto
+        }
+
+#formu2 input[type="text"]
+        {
+          box-sizing: border-box;
+          width: 100%;
+          margin: 10px 0px;
+          border: none;
+          outline: none;
+          background-color: transparent; 
+          border-bottom: 3px solid rgb(0, 247, 255); 
+          font-size: 11pt;    
+          color: #ffffff;  
+        }
+
+
+/* ---------------------yang dibawah buat radio style--------------------------- */
+
+/* Customize the label (the container) */
+.gen {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.gen input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.radiobutton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* When the radio button is checked, add a blue background */
+.gen:hover input ~ .radiobutton
+ { background-color: rgb(94, 255, 0);}
+
+/* When the radio button is checked, add a blue background */
+.gen input:checked ~ .radiobutton {
+  background-color: #000000;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radiobutton:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.gen input:checked ~ .radiobutton:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.gen .radiobutton:after {
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgb(123, 255, 0);
+}
+
+
+
+/* -------------------------------yang dibawah buat checkbox style----------------- */
+.container 
+{
+ display: block;
+ position: relative;
+ padding-left: 35px;
+ margin-bottom: 12px;
+ cursor: pointer;
+ font-size: 11;
+}
+
+/* hide default checkbox */
+.container input{
+                  position: absolute;
+                  opacity: 0;
+                  cursor: pointer;
+                  height: 0;
+                  width: 0;
+                }
+
+/* Create a custom checkbox */
+.checkmark 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark 
+{ background-color: rgb(115, 255, 0); }
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after 
+{
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after 
+{ display: block; }
+          
+ /* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark 
+{ background-color: #000000; }
+                    
+/* Style the checkmark/indicator */
+.container .checkmark:after 
+{
+   left: 7px;
+   top: 3px;
+   width: 5px;
+   height: 10px;
+   border: solid rgb(60, 255, 0);
+   border-width: 0 3px 3px 0;
+   -webkit-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   transform: rotate(45deg);
+}
+
+
+
+
+#formu2 textarea
+        {
+          box-sizing: border-box;
+          width: 80%;
+          margin: 10px 0px;
+          outline: none;
+          background-color: transparent; 
+          border: 3px solid rgb(0, 247, 255); 
+          font-size: 11pt;
+          color: #ffffff;      
+        }

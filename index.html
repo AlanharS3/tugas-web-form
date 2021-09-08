@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Tugas 2 Form </title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body>
+
+<form action="proses.php" method="POST">
+	
+	<div id="formu1">
+	<p> login </p> <br>
+	
+	<label for="username"> Username</label>
+	<input type="text"  id="username" name="pengguna" placeholder="input your username"> <br><br>
+			
+	<label for="sandi"> Password </label> <br>
+	<input type="password" id="sandi" name="sandi" placeholder="input your password"> 
+
+	</br></div>
+
+
+	<div id="formu2">
+        <p> U & Music </p>
+
+        <label for="nama"> Nama </label><br>
+        <input type="text" id="nama" name="nama" placeholder="input your name"> 
+                        
+        <br><br> <label>Jenis Kelamin</label> <br> <br>
+
+        <label class="gen"> Laki-laki
+        <input type="radio" name="gender" value="laki-laki"/>
+        <span class="radiobutton"></span>
+        </label>
+
+        <label class="gen"> perempuan
+        <input type="radio" name="gender" value="perempuan"/> 
+        <span class="radiobutton"></span>					
+        </label>
+        
+
+        <br><br> <label>Favorit Genre </label> <br> <br>
+        
+        <label class="container"> Pop
+        <input type="checkbox" checked="checked" name="hobi 1" value="Olahraga" >
+        <span class="checkmark"></span> 
+        </label>
+        
+        <label class="container"> Rock 
+        <input type="checkbox" name="hobi 1" value="Olahraga" >
+        <span class="checkmark"></span>
+        </label>
+        
+        <label class="container"> EDM
+        <input type="checkbox" name="hobi 2" value="Traveling" > 
+        <span class="checkmark"></span>
+        </label>
+        
+        <label class="container"> Ballad 
+        <input type="checkbox" name="hobi 3" value="Kesehatan" >
+        <span class="checkmark"></span>
+        </label>
+        						
+                   
+         
+        <br><br> <label for="cars"> Favorit instrument </label> <br>
+        
+        <select id="cars" name="cars">
+        <option value="volvo"> Guitar </option>
+        <option value="saab"> Piano </option>
+        <option value="fiat">Drum </option>
+        <option value="audi">Bass </option>
+        </select>					
+
+
+        <br><br><label for="pesan"> Favorit Song </label><br>
+        <textarea name="message" rows="5" cols="15"></textarea>
+
+            
+        <br><br> 
+         <input type="submit" name="daftar" value="Daftar">
+         <input type="reset" name="reset" value="Reset"> 
+         <br>
+        
+         </div>
+
+	</form>
+</body>
+</html>

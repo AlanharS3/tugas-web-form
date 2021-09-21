@@ -5,12 +5,30 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title> Tugas 2 Form </title>
-	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="stylesheet" type="text/css" href="form.css">
 </head>
 
 <body>
 
-<form action="proses.php" method="POST">
+<!---------------------------------------HEADER/NAV--------------------------------------------------------------->
+
+        <table width="100%">
+                <tr background="Nav ts Bg.png">
+                    <th align="right" colspan="2" height="70">  <img src="Asite.jpg" height="100%" width="100%"> <br> 
+                    <div id="nav">
+                      <ul>
+                        <li><a href="https://alanhars3.github.io/">HOME</a></li>
+                        <li><a href="https://alanhars3.github.io/">TUGAS 1</a></li>
+                        <li><a href="https://alanhars3.github.io/tugas-web-form/">TUGAS 2 </a></li>
+                        <li><a href="https://alanhars3.github.io/Tugas-Web-Calculator/">TUGAS 3 </a></li>
+                      </ul>
+                    </div>
+                </tr>
+        </table>
+
+<!---------------------------------------ISI --------------------------------------------------------------->
+
+<form>
 	
 	<div id="formu1">
 	<p> login </p> <br>
@@ -25,7 +43,7 @@
 
 
 	<div id="formu2">
-        <p> U & Music </p>
+        <p> U & Music </p> <br>
 
         <label for="nama"> Nama </label><br>
         <input type="text" id="nama" name="nama" placeholder="input your name"> 
@@ -46,38 +64,38 @@
         <br><br> <label>Favorit Genre </label> <br> <br>
         
         <label class="container"> Pop
-        <input type="checkbox" checked="checked" name="hobi 1" value="Olahraga" >
+        <input type="checkbox" checked="checked" name="Genre 1" value="Pop" >
         <span class="checkmark"></span> 
         </label>
         
         <label class="container"> Rock 
-        <input type="checkbox" name="hobi 1" value="Olahraga" >
+        <input type="checkbox" name="Genre 2" value="Rock" >
         <span class="checkmark"></span>
         </label>
         
         <label class="container"> EDM
-        <input type="checkbox" name="hobi 2" value="Traveling" > 
+        <input type="checkbox" name="Genre 3" value="EDM" > 
         <span class="checkmark"></span>
         </label>
         
         <label class="container"> Ballad 
-        <input type="checkbox" name="hobi 3" value="Kesehatan" >
+        <input type="checkbox" name="Genre 4" value="Ballad" >
         <span class="checkmark"></span>
         </label>
         						
                    
          
-        <br><br> <label for="cars"> Favorit instrument </label> <br>
+        <br><br> <label for="instrument"> Favorit instrument </label> <br>
         
-        <select id="cars" name="cars">
-        <option value="volvo"> Guitar </option>
-        <option value="saab"> Piano </option>
-        <option value="fiat">Drum </option>
-        <option value="audi">Bass </option>
+        <select id="instrument" name="instrument">
+        <option value="Guitar"> Guitar </option>
+        <option value="Piano"> Piano </option>
+        <option value="Drum">Drum </option>
+        <option value="Bass">Bass </option>
         </select>					
 
 
-        <br><br><label for="pesan"> Favorit Song </label><br>
+        <br><br><label for="pesan"> Favorit Singer/Song </label><br>
         <textarea name="message" rows="5" cols="15"></textarea>
 
             
@@ -89,5 +107,7 @@
          </div>
 
 	</form>
+
+
 </body>
 </html>
